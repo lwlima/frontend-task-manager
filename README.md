@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# Task Manager - React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Passo a passo para rodar
+1. Configurar o backend de acordo com esse [repositório](https://github.com/lwlima/backend-task-manager)
+3. Executar o comando `npm install`
+4. Executar o comando `npm run dev`
 
-Currently, two official plugins are available:
+## Auth
+Usuário de acesso criado automaticamente com o seeder:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+login: admin@admin.com.br
 
-## Expanding the ESLint configuration
+senha: admin
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
+- [x] Login
+- [x] Criar tasks
+- [x] Editar tasks
+- [x] Timer na task de status 'in progress' (só é permitido uma task in progress)
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Preview
+![image](https://github.com/lwlima/frontend-task-manager/assets/22258650/23ade6fa-7b90-45c1-84ef-f5add233bbfd)
+![image](https://github.com/lwlima/frontend-task-manager/assets/22258650/39c2ad0a-b437-4e6f-84a5-06e8ffb20b47)
